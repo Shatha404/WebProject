@@ -1,0 +1,31 @@
+<section id="header">
+  <a href="#"><img src="" class="logo" alt=""></a>
+  <div>
+      <ul id="navbar">
+          <li><a class="active" href="index.html">HOME</a></li>
+          <div class="popup" onclick="myFunction()">
+              <li><a href="#">About</a></li>
+              <span class="popuptext" id="myPopup">Riyadh University Landmarks" website is your comprehensive guide to exploring all the vibrant and distinctive locations within the campus of Riyadh University.</span>
+          </div>
+          <li><a href="#contactSection">CONTACT</a></li>
+          
+          <% if (!user) { %>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="/users/login"> Login</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="/users/signup"> Signup</a>
+              </li>
+            <% } else { %>
+              <li class="nav-item">
+                <a class="nav-link" href="/events/create"> Rate place</a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/users/logout"> logout</a>
+            </li>
+            <%}  %>
+      </ul>
+  </div>
+</section>
